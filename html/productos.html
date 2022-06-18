@@ -6,6 +6,8 @@
 	<title>Lit</title>
 	<link rel="shortcut icon" href="../img/favicon.png">
 	<link rel="stylesheet" href="../css/style.css">
+	<!-- wow js -->
+	<link rel="stylesheet" href="../css/animate.css">
 </head>
 <body>
 
@@ -44,45 +46,6 @@
 
 	<!-- Cierra contenido superior -->
 
-	<!-- Registro/Inicio de sesion -->
-
-	<main>
-		<section class="text-center">
-			<h1 >Ingresar/Registrarse</h1>
-			<form action="envio.php" method="post" id="contacto">
-				<fieldset>
-					<legend>INGRESAR</legend>
-					<label for="nombre">Usuario</label>
-					<br>
-					<input type="text" name="nombre" id="nombre" placeholder="Valentina">
-					<br>
-					<label for="email">Contraseña</label>
-					<br>
-					<input type="contraseña" name="contraseña" id="contraseña" placeholder="******">
-					<br>
-				</fieldset>
-				<input type="submit" value="Entrar">
-				<input type="reset" value="Cancelar">
-				<br>
-				<br>
-				<fieldset>
-					<legend>REGISTRARSE</legend>
-					<label for="nombre">Ingrese correo</label>
-					<br>
-					<input type="email" name="email" id="email" placeholder="Valentina@algo.com">
-					<br>
-					<label for="email">Contraseña</label>
-					<br>
-					<input type="contraseña" name="contraseña" id="contraseña" placeholder="******">
-					<br>
-				</fieldset>
-				<input type="submit" value="Entrar">
-				<input type="reset" value="Cancelar">
-			</form>
-		</section>
-
-	<!-- Cierre Registro/Inicio de sesion -->
-
 	<!-- inicia contenido principal -->
 
 	</main>
@@ -95,12 +58,12 @@
 
 	
 		<section class="text-center">
-			<h1>Nuestros Productos</h1>
-			<header>
-				<img src="../img/productos.jpg" alt="Productos" class="encabezado__img--fluid"><img src="../img/productos.jpg" alt="Productos" class="encabezado__img--fluid"><img src="../img/productos.jpg" alt="Productos" class="encabezado__img--fluid">
+			<h1 class="wow flipInY">Nuestros Productos</h1>
+			<header class="wow shake">
+				<img src="../img/productos.jpg" alt="Productos" class="encabezado__img--fluid wow flipInY"><img src="../img/productos.jpg" alt="Productos" class="encabezado__img--fluid wow flipInY"><img src="../img/productos.jpg" alt="Productos" class="encabezado__img--fluid wow flipInY">
 			</header>
-			<form action="envio.php" method="post" id="contacto" class="busquedaperi__tam--md flexible">
-				<fieldset class="bg-violet flexible">
+			<form action="envio.php" method="post" id="contacto" class="busquedaperi__tam--md flexible wow shake">
+				<fieldset class="bg-violet flexible linear-gradient">
 					<br>
 					<legend class="resaltar">Busqueda por perifericos</legend>
 					<label for="Mouses">Mouses</label>
@@ -114,69 +77,69 @@
 		</section>
 		<table border="10px" cellpadding="100%" cellspacing="10px" class="ajustar-productos">
 			<tr class="bg-violet">
-				<th class="box">Modelo</th>
-				<th class="box">Descripcion</th>
-				<th class="box">Codigo</th>
-				<th class="box">Precio</th>
-				<th class="box">Comprar</th>
+				<th class="box linear-gradient">Modelo</th>
+				<th class="box linear-gradient">Descripcion</th>
+				<th class="box linear-gradient">Codigo</th>
+				<th class="box linear-gradient">Precio</th>
+				<th class="box linear-gradient">Comprar</th>
 			</tr>
-			<tr class="bg-tdth">
+			<tr class="bg-tdth productos-gradient">
 				<td>Mouse Purpura</td>
 				<td>Mouse ultraliviano de 72 g, diseño simétrico, con sensor PMW 3330, 7200 DPI</td>
 				<td>Cod 0001</td>
 				<td>$1000</td>
 				<td><img src="../img/comprar.png" alt="Comprar"></td>
 			</tr>
-			<tr class="bg-tdth">
+			<tr class="bg-tdth productos-gradient">
 				<td>Mouse Rosa</td>
 				<td>Mouse ultraliviano de 72 g, diseño simétrico, con sensor PMW 3330, 7200 DPI</td>
 				<td>Cod 0002</td>
 				<td>$1000</td>
 				<td><img src="../img/comprar.png" alt="Comprar"></td>
 			</tr>
-			<tr class="bg-tdth">
+			<tr class="bg-tdth productos-gradient">
 				<td>Mouse Violeta</td>
 				<td>Mouse ultraliviano de 72 g, diseño simétrico, con sensor PMW 3330, 7200 DPI</td>
 				<td>Cod 0003</td>
 				<td>$1000</td>
 				<td><img src="../img/comprar.png" alt="Comprar"></td>
 			</tr>
-			<tr class="bg-tdth">
+			<tr class="bg-tdth productos-gradient">
 				<td>Teclado Zafiro</td>
 				<td>Teclado mecánico TKL hot-swap, control multimedia con interruptores Outemu</td>
 				<td>Cod 1001</td>
 				<td>$5000</td>
 				<td><img src="../img/comprar.png" alt="Comprar"></td>
 			</tr>
-			<tr class="bg-tdth">
+			<tr class="bg-tdth productos-gradient">
 				<td>Teclado Esmeralda</td>
 				<td>Teclado mecánico TKL hot-swap, control multimedia con interruptores Outemu</td>
 				<td>Cod 1002</td>
 				<td>$5000</td>
 				<td><img src="../img/comprar.png" alt="Comprar"></td>
 			</tr>
-			<tr class="bg-tdth">
+			<tr class="bg-tdth productos-gradient">
 				<td>Teclado Rubi</td>
 				<td>Teclado mecánico TKL hot-swap, control multimedia con interruptores Outemu</td>
 				<td>Cod 1003</td>
 				<td>$5000</td>
 				<td><img src="../img/comprar.png" alt="Comprar"></td>
 			</tr>
-			<tr class="bg-tdth">
+			<tr class="bg-tdth productos-gradient">
 				<td>Audifonos Super</td>
 				<td>Audífono estéreo con sistema de vibración controlable, iluminación RGB</td>
 				<td>Cod 2001</td>
 				<td>$2000</td>
 				<td><img src="../img/comprar.png" alt="Comprar"></td>
 			</tr>
-			<tr class="bg-tdth">
+			<tr class="bg-tdth productos-gradient">
 				<td>Audifonos Mega</td>
 				<td>Audífono estéreo con sistema de vibración controlable, iluminación RGB</td>
 				<td>Cod 2002</td>
 				<td>$2000</td>
 				<td><img src="../img/comprar.png" alt="Comprar"></td>
 			</tr>
-			<tr class="bg-tdth">
+			<tr class="bg-tdth productos-gradient">
 				<td>Audifonos Ultra</td>
 				<td>Audífono estéreo con sistema de vibración controlable, iluminación RGB</td>
 				<td>Cod 2003</td>
@@ -211,5 +174,9 @@
 
 	<!-- Cierra footer -->
 
+	<script src="../js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 </body>
 </html>

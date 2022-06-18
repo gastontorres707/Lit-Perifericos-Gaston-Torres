@@ -6,6 +6,9 @@
 	<title>Lit</title>
 	<link rel="shortcut icon" href="img/favicon.png">
 	<link rel="stylesheet" href="css/style.css">
+	<!-- wow js -->
+	<link rel="stylesheet" href="css/animate.css">
+
 </head>
 <body>
 
@@ -50,9 +53,9 @@
 	</main>
 	<section>
 		<form action="envio.php" method="post" id="header" class="busquedaperi__tam--md flexibleindex">
-			<fieldset class="bg-violet flexibleindex">
+			<fieldset class="bg-violet flexibleindex linear-gradient">
 				<br>
-				<legend class="resaltar">Busqueda por perifericos</legend>
+				<legend class="resaltar wow flip">Busqueda por perifericos</legend>
 				<label for="Mouses">Mouses</label>
 				<input type="radio" value="mouses" id="mouses">
 				<label for="teclados">Teclados</label>
@@ -65,37 +68,37 @@
 
 	<header>
 		<section>
-			<h1 class="text-center">Nuestros productos mas vendidos</h1>
+			<h1 class=" text-center wow bounceInLeft">Nuestros productos mas vendidos</h1>
 			<table border="10px" cellpadding="50px" cellspacing="10px" class="text-center ajustar-productos">
 				<tr class="bg-violet">
-					<th class="box">Modelo</th>
-					<th class="box">Descripcion</th>
-					<th class="box">Codigo</th>
-					<th class="box">Precio</th>
-					<th class="box">Comprar</th>
+					<th class="box linear-gradient">Modelo</th>
+					<th class="box linear-gradient">Descripcion</th>
+					<th class="box linear-gradient">Codigo</th>
+					<th class="box linear-gradient">Precio</th>
+					<th class="box linear-gradient">Comprar</th>
 				</tr>
-				<tr class="bg-tdth">
+				<tr class="bg-tdth productos-gradient">
 					<td>Mouse Purpura</td>
 					<td>Mouse ultraliviano de 72 g, diseño simétrico, con sensor PMW 3330, 7200 DPI</td>
 					<td>Cod 0001</td>
 					<td>$1000</td>
 					<td><img src="img/comprar.png" alt="Comprar"></td>
 				</tr>
-				<tr class="bg-tdth">
+				<tr class="bg-tdth productos-gradient">
 					<td>Mouse Rosa</td>
 					<td>Mouse ultraliviano de 72 g, diseño simétrico, con sensor PMW 3330, 7200 DPI</td>
 					<td>Cod 0002</td>
 					<td>$1000</td>
 					<td><img src="img/comprar.png" alt="Comprar"></td>
 				</tr>
-				<tr class="bg-tdth">
+				<tr class="bg-tdth productos-gradient">
 					<td>Teclado Zafiro</td>
 					<td>Teclado mecánico TKL hot-swap, control multimedia con interruptores Outemu</td>
 					<td>Cod 1001</td>
 					<td>$5000</td>
 					<td><img src="img/comprar.png" alt="Comprar"></td>
 				</tr>
-				<tr class="bg-tdth">
+				<tr class="bg-tdth productos-gradient">
 					<td>Teclado Esmeralda</td>
 					<td>Teclado mecánico TKL hot-swap, control multimedia con interruptores Outemu</td>
 					<td>Cod 1002</td>
@@ -109,12 +112,12 @@
 
 
 	<header class="text-center" id="aside">
-			<h1>Algunas reviews a nuestros productos</h1>
-			<iframe width="660" height="315" src="https://www.youtube.com/embed/ec8quLiCWLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="660" height="315" src="https://www.youtube.com/embed/UfiOTIqnWpE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<h1 class="wow shake">Algunas reviews a nuestros productos</h1>
+			<iframe width="660" height="315" class="skew" src="https://www.youtube.com/embed/ec8quLiCWLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="660" height="315" class="skew" src="https://www.youtube.com/embed/UfiOTIqnWpE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</header>
 		
 	<header class="text-center" id="atencion">
-		<article class="nosotros__articulo2" id="atencion">
+		<article class="nosotros__articulo2 wow swing" id="atencion">
 			<h1>Atencion al cliente: </h1>
 			<p>	Telefono 0810-555-8892 </p>
 			<p>	consultas@lit.com.ar </p>
@@ -134,7 +137,7 @@
 	<br>
 
 
-	<header class="text-center center" id="ubicacion">
+	<header class="text-center center wow fadeOut scale" id="ubicacion">
 		<h1>Nos encontramos ubicados en:</h1>
 		<header>
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18589.687501988883!2d-58.71746929366478!3d-34.547895533080485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbdf99338707d%3A0xd8f230a2d1513334!2sMalvinasNet!5e0!3m2!1ses-419!2sar!4v1653958524694!5m2!1ses-419!2sar" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa__tam"></iframe>
@@ -165,6 +168,10 @@
 
 	<!-- Cierra footer -->
 
+	<script src="js/wow.min.js"></script>
+    <script>
+    	new WOW().init();
+    </script>
 </div>
 </body>
 </html>

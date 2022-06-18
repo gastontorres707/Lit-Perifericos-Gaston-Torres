@@ -6,101 +6,76 @@
 	<title>Lit</title>
 	<link rel="shortcut icon" href="../img/favicon.png">
 	<link rel="stylesheet" href="../css/style.css">
+	<!-- wow js -->
+	<link rel="stylesheet" href="../css/animate.css">
+
 </head>
 <body>
 
 	<div class="encabezado__box--white">
 		<p>--Bienvenido a nuestra pagina--</p>
 	</div>
-	
-	<nav>
-		
-		<fieldset class="text-center">
-			<input type="text" name="nombre" id="nombre" placeholder="Que buscas?"><label for="nombre">Buscar</label>
-		</fieldset>
-		<a href="../index.html">
-			<img src="../img/logi.png" alt="Logo de Lit">
-		</a>
-	</nav>
-	<nav class="text-center">
-		<ul>
-			<li>
-				<a href="../html/inicio.html">Inicio</a>
-			</li>
-			<li>
-				<a href="../html/productos.html">Productos</a>
-			</li>
-			<li>
-				<a href="../html/ofertas.html">Ofertas</a>
-			</li>
-			<li>
-				<a href="../html/nosotros.html">Nosotros</a>
-			</li>
-			<li>
-				<a href="../html/contacto.html">Contacto</a>
-			</li>
-		</ul>
-	</nav>
 
+<div class="contenedor">
+	<principal id="mainNav">
+		<nav>		
+			<fieldset class="text-center">
+				<input type="text" name="nombre" id="nombre" placeholder="Que buscas?"><label for="nombre">Buscar</label>
+			</fieldset>
+			<a href="../index.html">
+				<img src="../img/logi.png" alt="Logo de Lit">
+			</a>
+		</nav>
+		<nav class="text-center">
+			<ul>
+				<li>
+					<a href="../html/inicio.html">Inicio</a>
+				</li>
+				<li>
+					<a href="../html/productos.html">Productos</a>
+				</li>
+				<li>
+					<a href="../html/ofertas.html">Ofertas</a>
+				</li>
+				<li>
+					<a href="../html/nosotros.html">Nosotros</a>
+				</li>
+				<li>
+					<a href="../html/contacto.html">Contacto</a>
+				</li>
+			</ul>
+		</nav>
+	</principal>
 	<!-- Cierra contenido superior -->
-
-	<!-- Registro/Inicio de sesion -->
-
-	<main>
-		<section class="text-center">
-			<h1 >Ingresar/Registrarse</h1>
-			<form action="envio.php" method="post" id="contacto">
-				<fieldset>
-					<legend>INGRESAR</legend>
-					<label for="nombre">Usuario</label>
-					<br>
-					<input type="text" name="nombre" id="nombre" placeholder="Valentina">
-					<br>
-					<label for="email">Contraseña</label>
-					<br>
-					<input type="contraseña" name="contraseña" id="contraseña" placeholder="******">
-					<br>
-				</fieldset>
-				<input type="submit" value="Entrar">
-				<input type="reset" value="Cancelar">
-				<br>
-				<br>
-				<fieldset>
-					<legend>REGISTRARSE</legend>
-					<label for="nombre">Ingrese correo</label>
-					<br>
-					<input type="email" name="email" id="email" placeholder="Valentina@algo.com">
-					<br>
-					<label for="email">Contraseña</label>
-					<br>
-					<input type="contraseña" name="contraseña" id="contraseña" placeholder="******">
-					<br>
-				</fieldset>
-				<input type="submit" value="Entrar">
-				<input type="reset" value="Cancelar">
-			</form>
-		</section>
-
-	<!-- Cierre Registro/Inicio de sesion -->
 
 	<!-- inicia contenido principal -->
 
 	</main>
+	<section>
+		<form action="envio.php" method="post" id="header" class="busquedaperi__tam--md flexibleindex">
+			<fieldset class="bg-violet flexibleindex linear-gradient">
+				<br>
+				<legend class="resaltar wow flip">Busqueda por perifericos</legend>
+				<label for="Mouses">Mouses</label>
+				<input type="radio" value="mouses" id="mouses">
+				<label for="teclados">Teclados</label>
+				<input type="radio" value="teclados" id="teclados">
+				<label for="teclados">Audifonos</label>
+				<input type="radio" value="audifonos" id="audifonos">
+			</fieldset>
+		</form>
+	</section>
 
-	<header class="text-center">
-		<br>
-		<img src="../img/perifericos.jpg" alt="Perifericos">
-	</header>
 	<header>
 		<section>
-			<h1 class="text-center">Nuestros productos mas vendidos</h1>
-			<table border="10px" cellpadding="100%" cellspacing="10px" class="text-center ajustar-productos">
+			<h1 class=" text-center wow bounceInLeft">Nuestros productos mas vendidos</h1>
+			<table border="10px" cellpadding="50px" cellspacing="10px" class="text-center ajustar-productos">
 				<tr class="bg-violet">
-					<th class="box">Modelo</th>
-					<th class="box">Descripcion</th>
-					<th class="box">Codigo</th>
-					<th class="box">Precio</th>
-					<th class="box">Comprar</th>
+					<th class="box linear-gradient">Modelo</th>
+					<th class="box linear-gradient">Descripcion</th>
+					<th class="box linear-gradient">Codigo</th>
+					<th class="box linear-gradient">Precio</th>
+					<th class="box linear-gradient">Comprar</th>
 				</tr>
 				<tr class="bg-tdth">
 					<td>Mouse Purpura</td>
@@ -135,45 +110,46 @@
 	</header>
 		<br>
 
-		<section class="text-center">
-			<h1>Algunas reviews a nuestros productos</h1>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/ec8quLiCWLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/UfiOTIqnWpE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</section>
-		
 
-	<header class="text-center">
-		<br>
-		<h1>Nos encontramos ubicados en:</h1>
-		<br>
-		<header>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18589.687501988883!2d-58.71746929366478!3d-34.547895533080485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbdf99338707d%3A0xd8f230a2d1513334!2sMalvinasNet!5e0!3m2!1ses-419!2sar!4v1653958524694!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa__tam"></iframe>
+	<header class="text-center" id="aside">
+			<h1 class="wow shake">Algunas reviews a nuestros productos</h1>
+			<iframe width="660" height="315" class="skew" src="https://www.youtube.com/embed/ec8quLiCWLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="660" height="315" class="skew" src="https://www.youtube.com/embed/UfiOTIqnWpE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</header>
-
-	<header class="text-center">
-		<h1>Atencion al cliente: </h1>
-		<p>	Telefono 0810-555-8892 </p>
-		<p>	consultas@lit.com.ar </p>
-		<p>	WhatsApp +54 11 2040-0949 </p> 
-		<p>	Lun. a Vie. de 9 a 19h. Sab de 10 a 14h </p>
-		<p>	Florida 537 Local 370 (CABA) </p>
-		</p>
-		<h1>Metodos de pago </h1>
-			<p>
-			<img src="../img/mastercard.png" alt="Mastercard">
-			<img src="../img/mercadopago.png" alt="Mercadopago">
-			<img src="../img/pagofacil.png" alt="Pagofacil">
-			<img src="../img/rapipago.png" alt="Rapipago">
-			<img src="../img/visa.png" alt="Visa">
-			<br>
+		
+	<header class="text-center" id="atencion">
+		<article class="nosotros__articulo2 wow swing" id="atencion">
+			<h1>Atencion al cliente: </h1>
+			<p>	Telefono 0810-555-8892 </p>
+			<p>	consultas@lit.com.ar </p>
+			<p>	Lun. a Vie. de 9 a 19h. Sab de 10 a 14h </p>
+			<p>	Florida 537 Local 370 (CABA) </p>
 			</p>
+			<h1>Metodos de pago </h1>
+				<p>
+				<img src="../img/mastercard.png" alt="Mastercard">
+				<img src="../img/pagofacil.png" alt="Pagofacil">
+				<img src="../img/rapipago.png" alt="Rapipago">
+				<img src="../img/visa.png" alt="Visa">
+				<br>
+				</p>
+		</article>
 	</header>
 	<br>
+
+
+	<header class="text-center center wow fadeOut scale" id="ubicacion">
+		<h1>Nos encontramos ubicados en:</h1>
+		<header>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18589.687501988883!2d-58.71746929366478!3d-34.547895533080485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbdf99338707d%3A0xd8f230a2d1513334!2sMalvinasNet!5e0!3m2!1ses-419!2sar!4v1653958524694!5m2!1ses-419!2sar" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa__tam"></iframe>
+		</header>
+	</header>
 
 	<!-- Cierre contenido principal -->
 
 	<!-- inicia footer -->
 
-	<footer class="text-center">
+
+	<footer class="text-center" id="footer">
 		<h3 class="text-center">Seguinos a Lit en nuestras redes</h3>
 		<a href="https://facebook.com/user">
 			<img src="../img/facebook.png" alt="Seguinos en Facebook">
@@ -187,12 +163,15 @@
 		<a href="https://youtube.com/user">
 			<img src="../img/youtube.png" alt="Seguinos en Youtube">
 		</a>
-	</footer>
-	<footer>
 		<h4 class="text-center">©Copyright 2022 Lit Todos los derechos reservados</h4>
 	</footer>
 
 	<!-- Cierra footer -->
 
+	<script src="../js/wow.min.js"></script>
+    <script>
+    	new WOW().init();
+    </script>
+</div>
 </body>
 </html>

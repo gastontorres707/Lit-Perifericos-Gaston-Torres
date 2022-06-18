@@ -6,6 +6,8 @@
 	<title>Lit</title>
 	<link rel="shortcut icon" href="../img/favicon.png">
 	<link rel="stylesheet" href="../css/style.css">
+	<!-- wow js -->
+	<link rel="stylesheet" href="../css/animate.css">
 </head>
 <body>
 
@@ -44,45 +46,6 @@
 
 	<!-- Cierra contenido superior -->
 
-	<!-- Registro/Inicio de sesion -->
-
-	<main>
-		<section class="text-center">
-			<h1 >Ingresar/Registrarse</h1>
-			<form action="envio.php" method="post" id="contacto">
-				<fieldset>
-					<legend>INGRESAR</legend>
-					<label for="nombre">Usuario</label>
-					<br>
-					<input type="text" name="nombre" id="nombre" placeholder="Valentina">
-					<br>
-					<label for="email">Contraseña</label>
-					<br>
-					<input type="contraseña" name="contraseña" id="contraseña" placeholder="******">
-					<br>
-				</fieldset>
-				<input type="submit" value="Entrar">
-				<input type="reset" value="Cancelar">
-				<br>
-				<br>
-				<fieldset>
-					<legend>REGISTRARSE</legend>
-					<label for="nombre">Ingrese correo</label>
-					<br>
-					<input type="email" name="email" id="email" placeholder="Valentina@algo.com">
-					<br>
-					<label for="email">Contraseña</label>
-					<br>
-					<input type="contraseña" name="contraseña" id="contraseña" placeholder="******">
-					<br>
-				</fieldset>
-				<input type="submit" value="Entrar">
-				<input type="reset" value="Cancelar">
-			</form>
-		</section>
-
-	<!-- Cierre Registro/Inicio de sesion -->
-
 	<!-- inicia contenido principal -->
 
 	</main>
@@ -93,16 +56,16 @@
 
 	
 		<section class="text-center">
-			<h1>Contacto para consultas</h1>
+			<h1 class="wow bounceInLeft">Contacto para consultas</h1>
 			<form action="envio.php" method="post" id="contacto">
 				<header>
 					<br>
-					<img src="../img/contacto.jpg" alt="Contacto" class="encabezado__img--fluid"><img src="../img/contacto.jpg" alt="Contacto" class="encabezado__img--fluid"><img src="../img/contacto.jpg" alt="Contacto" class="encabezado__img--fluid">
+					<img src="../img/contacto.jpg" alt="Contacto" class="encabezado__img--fluid wow flipOutX"><img src="../img/contacto.jpg" alt="Contacto" class="encabezado__img--fluid wow flipOutX"><img src="../img/contacto.jpg" alt="Contacto" class="encabezado__img--fluid wow flipOutX">
 					<br>
 					<br>
 				</header>
 				<br>
-				<fieldset class="busquedaconsu__tam--md bg-violet flexible">
+				<fieldset class="busquedaconsu__tam--md bg-violet flexible productos-gradient wow bounceIn">
 					<legend>Info de contacto</legend>
 					<label for="nombre">Nombre</label>
 					<br>
@@ -115,22 +78,22 @@
 				</fieldset>
 				<label for="mensaje" class="busquedaconsu__tam--md">Mensaje</label>
 				<br>
-				<textarea cols="50" rows="20" class="mapa__tam"></textarea>
+				<textarea cols="50" rows="20" class="mapa__tam transform"></textarea>
 				<br>
 				<input type="submit" value="Enviar">
 				<input type="reset" value="Cancelar">
 			</form>
 	
-			<h1>Contacto para compra por mayor</h1>
+			<h1 class="wow bounceInLeft">Contacto para compra por mayor</h1>
 			<form action="envio.php" method="post" id="contacto">
 				<header>
 					<br>
-					<img src="../img/pormayor.jpg" alt="Compra por mayor" class="encabezado__img--fluid"><img src="../img/pormayor.jpg" alt="Compra por mayor" class="encabezado__img--fluid"><img src="../img/pormayor.jpg" alt="Compra por mayor" class="encabezado__img--fluid">
+					<img src="../img/pormayor.jpg" alt="Compra por mayor" class="encabezado__img--fluid wow flipOutY"><img src="../img/pormayor.jpg" alt="Compra por mayor" class="encabezado__img--fluid wow flipOutY"><img src="../img/pormayor.jpg" alt="Compra por mayor" class="encabezado__img--fluid wow flipOutY">
 					<br>
 					<br>
 				</header>
 				<br>
-				<fieldset class="busquedaconsu__tam--md bg-violet flexible">
+				<fieldset class="busquedaconsu__tam--md bg-violet flexible productos-gradient wow bounceIn">
 					<legend>Info de contacto</legend>
 					<label for="nombre">Nombre</label>
 					<br>
@@ -141,7 +104,7 @@
 					<input type="email" name="email" id="email" placeholder="mail@algo.com">
 					<br>
 				</fieldset>
-				<fieldset class="busquedaconsu__tam--md bg-violet flexible">
+				<fieldset class="busquedaconsu__tam--md bg-violet flexible productos-gradient wow bounceIn">
 					<legend>Info de venta</legend>
 					<label for="Mouses">Mouses</label>
 					<input type="checkbox" value="mouses" id="mouses">
@@ -152,7 +115,7 @@
 					<label for="teclados">Audifonos</label>
 					<input type="checkbox" value="audifonos" id="audifonos">
 				</fieldset>
-				<fieldset class="busquedaconsu__tam--md bg-violet flexible">
+				<fieldset class="busquedaconsu__tam--md bg-violet flexible productos-gradient wow bounceIn">
 					<legend>Entrega</legend>
 					<label for="local">Retira en el local</label>
 					<input type="radio" id="local" value="local" name="entrega">
@@ -169,7 +132,7 @@
 				</fieldset>
 				<label for="mensaje" class="busquedaconsu__tam--md">Mensaje</label>
 				<br>
-				<textarea cols="50" rows="20" class="mapa__tam"></textarea>
+				<textarea cols="50" rows="20" class="mapa__tam transform"></textarea>
 				<br>
 				<input type="submit" value="Enviar">
 				<input type="reset" value="Cancelar">
@@ -201,6 +164,10 @@
 	</footer>
 
 	<!-- Cierra footer -->
+	<script src="../js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 
 </body>
 </html>

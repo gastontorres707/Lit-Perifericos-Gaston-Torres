@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Odibee+Sans&display=swap');
+
+/* SELECTORES DE ETIQUETA */
+
+html{
+	font-size: 62.5%;
+}
+
+h1,h2,h3{
+	font-family: 'Luckiest Guy', cursive;
+}
+
+p{
+	font-family: 'Luckiest Guy', cursive;
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+	font-weight: 400;
+}
+
+
+
+h1{
+	color: black;
+	font-size: 3rem;
+	padding-top: 3%;
+}
+
+h2{
+	color: white;
+	font-size: 3rem;
+}
+
+h3{
+	color: black;
+	font-size: 2rem;
+}
+
+
+header article{
+	color: black;
+}
+
+nav{
+	background-color: rgba(238,188,247,.5);
+
+	/* Position */
+	position: relative;
+
+	/* Padding */
+	top: none;
+	width: none;
+	justify-content: space-evenly;
+	align-items: center;
+	padding-right: 100px;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+	nav ul{
+		display: inline-block;
+		font-size: 10px;
+    	text-transform: uppercase;
+    	display: flex;
+	}
+
+	nav ul li{
+		list-style: none;
+		display: flex;
+		margin: 0 20px;
+	}
+
+		nav ul li a{
+			text-decoration: none;
+			font-size: 2.2rem;
+			color: black;
+			font-family: 'Luckiest Guy', cursive;
+
+		}
+
+		nav ul li a:hover{
+			font-weight: 600;
+			color: black;
+		}
+
+body{
+	background-image: url(../img/fondo.png);
+	background-attachment: fixed;
+
+}
+
+main{
+	/* Position */
+	position: fixed;
+
+	/* Padding */
+	bottom: 63%;
+	left: 80%;
+
+}
+
+/* SELECTORES DE CLASE */
+
+.text-green{
+	color: blue;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.text-bold{
+	font-weight: 700;
+}
+
+.bg-light{
+	background-color: black;
+}
+
+.bg-violet{
+	background-color: lightblue;
+}
+
+.bg-yellow{
+	background-color: yellow;
+}
+
+.bg-tdth{
+	background-color: white;
+}
+
+/* SELECTOR DE ID*/
+#productos{
+
+}
+
+.nosotros__articulo{
+	width: 90%;
+	height: auto;
+	padding: 50px;
+/*	margin-left: 100px;
+	margin-top: 50px;
+	margin-right: 100px;
+	margin-bottom: 50px; */
+	margin: auto;
+	margin-right: 100px;
+	border: solid; 
+	overflow: auto;
+	box-sizing: border-box;
+}
+
+.nosotros__articulo1{
+	width: 90%;
+	height: auto;
+	padding: 50px;
+/*	margin-left: 100px;
+	margin-top: 50px;
+	margin-right: 100px;
+	margin-bottom: 50px; */
+	margin: auto;
+	border: dotted; deeppink 10px;
+	overflow: auto;
+	box-sizing: border-box;
+
+}
+
+.nosotros__articulo2{
+	width: 100%;
+	height: auto;
+	padding: 80px;
+/*	margin-left: 100px;
+	margin-top: 50px;
+	margin-right: 100px;
+	margin-bottom: 50px; */
+	margin-left: 200px; 
+	overflow: auto;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.encabezado__box--white{
+	background-color: white;
+	padding: auto;
+}  
+
+.encabezado__img--fluid{
+	width: 30%;
+}
+
+.mapa__tam{
+	width: 50%;
+}
+
+.nosotros__titulo--xl{
+	font-size: 3rem;
+}
+
+.nosotros__text--md{
+	font-size: 2.5rem;
+}
+
+.busquedaperi__tam--md{
+	font-size: 2.5rem;
+
+}
+
+.busquedaconsu__tam--md{
+	font-size: 3rem;
+}
+
+.flexible{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+ 	width: 94%;
+ 	margin: 50px;
+
+}
+
+.ajustar-productos{
+	margin: 50px;
+	font-size: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+
+}
+
+.resaltar{
+	font-family: 'Luckiest Guy', cursive;
+}
+
+.box{
+	padding: 20px;
+	text-align: center;
+	font-size: 3rem;
+}
+
+.contenedor{
+	display: grid;
+	grid-template-columns: 25% 50% 25% ;
+	grid-template-rows: 3% auto auto auto;
+	grid-template-areas: "nav nav nav" "header produ produ" "aside aside aside" "atencion ubicacion ubicacion" "footer footer footer";
+
+}
+
+#mainNav{
+	grid-area: nav;
+}
+
+#header{
+	grid-area: header;
+}
+
+#atencion{
+	grid-area: atencion;
+}
+
+#ubicacion{
+	grid-area: ubicacion;
+}
+
+#foto{
+	grid-area: foto;
+}
+
+#aside{
+	grid-area: aside;
+}
+
+#footer{
+	grid-area: footer;
+}
+
+.column-row-start-end-item{
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+
+}
+
+.flexibleindex{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+ 	width: auto;
+ 	margin: auto;
+ 	margin-top: 20%;
+ 	flex-direction: column-reverse;
+
+}
+
+.padding{
+	padding: 20%;
+}
+
+@media (min-width: 768px){
+	.contenedor{
+		grid-template-columns: 20vw 80vw;
+		grid-template-rows: repeat(5, auto);
+		grid-template-areas: "nav nav" "header produ" "aside aside" "atencion ubicacion" "aside aside" "footer footer";
+	}
+
+@media (min-width: 1024px){
+	.contenedor{
+		grid-template-columns: 20vw 60vw 20vw;
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas: "nav nav nav" "header produ produ" "aside aside aside" "atencion ubicacion ubicacion" "footer footer footer";
+	}
+}
+
+
+/*PARA NOSOTROS*/
+
+.contenedor1{
+	display: grid;
+	grid-template-columns: 25% 60% 15%;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas: "nav nav nav" "jelow header header" "foto aside aside" "footer footer footer";
+
+
+}
+
+#mainNav{
+	grid-area: nav; 
+}
+
+#header{
+	grid-area: header;
+}
+
+#produ{
+	grid-area:produ;
+}
+
+#aside{
+	grid-area: aside;
+}
+
+#footer{
+	grid-area: footer;
+}
+
+#jelow{
+	grid-area: jelow;
+}
+
+
+.column-row-start-end-item{
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+
+}
+
+.flexibleindex{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+ 	width: auto;
+ 	margin: auto;
+ 	margin-top: 20%;
+ 	flex-direction: column-reverse;
+
+}
+
+@media (min-width: 768px){
+	.contenedor1{
+		grid-template-columns: 20vw 80vw;
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas: "nav nav" "jelow header" "foto aside" "footer footer";
+	}
+
+@media (min-width: 1024px){
+	.contenedor1{
+		grid-template-columns: 20vw 70vw 10vw;
+		grid-template-rows: repeat(3, auto);
+		grid-template-areas: "nav nav nav" "jelow header header" "foto aside aside" "footer footer footer";
+
+	}
+}
+
+
+

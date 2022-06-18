@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=">
+	<title>Lit</title>
+	<link rel="shortcut icon" href="../img/favicon.png">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+	<div class="encabezado__box--white">
+		<p>--Bienvenido a nuestra pagina--</p>
+	</div>
+	
+	<nav>	
+		<fieldset class="text-center">
+			<input type="text" name="nombre" id="nombre" placeholder="Que buscas?"><label for="nombre">Buscar</label>
+		</fieldset>
+		<a href="../index.html">
+			<img src="../img/logi.png" alt="Logo de Lit">
+		</a>
+	</nav>
+
+	<nav class="text-center">
+		<ul>
+			<li>
+				<a href="../html/inicio.html">Inicio</a>
+			</li>
+			<li>
+				<a href="../html/productos.html">Productos</a>
+			</li>
+			<li>
+				<a href="../html/ofertas.html">Ofertas</a>
+			</li>
+			<li>
+				<a href="../html/nosotros.html">Nosotros</a>
+			</li>
+			<li>
+				<a href="../html/contacto.html">Contacto</a>
+			</li>
+		</ul>
+	</nav>
+
+	<!-- Cierra contenido superior -->
+
+	<!-- Registro/Inicio de sesion -->
+
+	<main>
+		<section class="text-center">
+			<h1 >Ingresar/Registrarse</h1>
+			<form action="envio.php" method="post" id="contacto">
+				<fieldset>
+					<legend>INGRESAR</legend>
+					<label for="nombre">Usuario</label>
+					<br>
+					<input type="text" name="nombre" id="nombre" placeholder="Valentina">
+					<br>
+					<label for="email">Contraseña</label>
+					<br>
+					<input type="contraseña" name="contraseña" id="contraseña" placeholder="******">
+					<br>
+				</fieldset>
+				<input type="submit" value="Entrar">
+				<input type="reset" value="Cancelar">
+				<br>
+				<br>
+				<fieldset>
+					<legend>REGISTRARSE</legend>
+					<label for="nombre">Ingrese correo</label>
+					<br>
+					<input type="email" name="email" id="email" placeholder="Valentina@algo.com">
+					<br>
+					<label for="email">Contraseña</label>
+					<br>
+					<input type="contraseña" name="contraseña" id="contraseña" placeholder="******">
+					<br>
+				</fieldset>
+				<input type="submit" value="Entrar">
+				<input type="reset" value="Cancelar">
+			</form>
+		</section>
+
+	<!-- Cierre Registro/Inicio de sesion -->
+
+	<!-- inicia contenido principal -->
+
+	</main>
+
+	<header class="bg-light">
+		<h2 class="text-center nosotros__titulo--xl">Contactate con nosotros</h2>
+	</header>
+
+	
+		<section class="text-center">
+			<h1>Contacto para consultas</h1>
+			<form action="envio.php" method="post" id="contacto">
+				<header>
+					<br>
+					<img src="../img/contacto.jpg" alt="Contacto" class="encabezado__img--fluid"><img src="../img/contacto.jpg" alt="Contacto" class="encabezado__img--fluid"><img src="../img/contacto.jpg" alt="Contacto" class="encabezado__img--fluid">
+					<br>
+					<br>
+				</header>
+				<br>
+				<fieldset class="busquedaconsu__tam--md bg-violet flexible">
+					<legend>Info de contacto</legend>
+					<label for="nombre">Nombre</label>
+					<br>
+					<input type="text" name="nombre" id="nombre" placeholder="Valentina">
+					<br>
+					<label for="email">Email</label>
+					<br>
+					<input type="email" name="email" id="email" placeholder="mail@algo.com">
+					<br>
+				</fieldset>
+				<label for="mensaje" class="busquedaconsu__tam--md">Mensaje</label>
+				<br>
+				<textarea cols="50" rows="20" class="mapa__tam"></textarea>
+				<br>
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Cancelar">
+			</form>
+	
+			<h1>Contacto para compra por mayor</h1>
+			<form action="envio.php" method="post" id="contacto">
+				<header>
+					<br>
+					<img src="../img/pormayor.jpg" alt="Compra por mayor" class="encabezado__img--fluid"><img src="../img/pormayor.jpg" alt="Compra por mayor" class="encabezado__img--fluid"><img src="../img/pormayor.jpg" alt="Compra por mayor" class="encabezado__img--fluid">
+					<br>
+					<br>
+				</header>
+				<br>
+				<fieldset class="busquedaconsu__tam--md bg-violet flexible">
+					<legend>Info de contacto</legend>
+					<label for="nombre">Nombre</label>
+					<br>
+					<input type="text" name="nombre" id="nombre" placeholder="Valentina">
+					<br>
+					<label for="email">Email</label>
+					<br>
+					<input type="email" name="email" id="email" placeholder="mail@algo.com">
+					<br>
+				</fieldset>
+				<fieldset class="busquedaconsu__tam--md bg-violet flexible">
+					<legend>Info de venta</legend>
+					<label for="Mouses">Mouses</label>
+					<input type="checkbox" value="mouses" id="mouses">
+					<br>
+					<label for="teclados">Teclados</label>
+					<input type="checkbox" value="teclados" id="teclados">
+					<br>
+					<label for="teclados">Audifonos</label>
+					<input type="checkbox" value="audifonos" id="audifonos">
+				</fieldset>
+				<fieldset class="busquedaconsu__tam--md bg-violet flexible">
+					<legend>Entrega</legend>
+					<label for="local">Retira en el local</label>
+					<input type="radio" id="local" value="local" name="entrega">
+					<br>
+					<label for="envio">Envio a domicilio</label>
+					<input type="radio" id="envio" name="entrega" value="envio">
+					<br>
+					<label for="localidad">Localidad</label>
+					<select name="localidad" id="localidad">
+						<option value="caba">CABA</option>
+						<option value="bsas">Buenos Aires</option>
+						<option value="interior">Interior del pais</option>
+					</select>
+				</fieldset>
+				<label for="mensaje" class="busquedaconsu__tam--md">Mensaje</label>
+				<br>
+				<textarea cols="50" rows="20" class="mapa__tam"></textarea>
+				<br>
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Cancelar">
+			</form>
+		</section>
+	
+
+	<!-- Cierre contenido principal -->
+
+	<!-- inicia footer -->
+
+	<footer class="text-center">
+		<h3 class="text-center">Seguinos a Lit en nuestras redes</h3>
+		<a href="https://facebook.com/user">
+			<img src="../img/facebook.png" alt="Seguinos en Facebook">
+		</a>
+		<a href="https://twitter.com/">
+			<img src="../img/twitter.png" alt="Seguinos en Twitter">
+		</a>
+		<a href="https://instagram.com/user">
+			<img src="../img/instagram.png" alt="Seguinos en Instagram">
+		</a>
+		<a href="https://youtube.com/user">
+			<img src="../img/youtube.png" alt="Seguinos en Youtube">
+		</a>
+	</footer>
+	<footer>
+		<h4 class="text-center">©Copyright 2022 Lit Todos los derechos reservados</h4>
+	</footer>
+
+	<!-- Cierra footer -->
+
+</body>
+</html>
